@@ -25,10 +25,10 @@ static void vAlertTask(void *pvParameters);
 static void vEventTask(void *pvParameters);
 
 /* Global variables */
-int userActivity = 0;
-int userActivityDetection = 0;
-int suspiciousActivity = 0;
-int suspiciousActivityDetection = 0;
+volatile int userActivity = 0;
+volatile int userActivityDetection = 0;
+volatile int suspiciousActivity = 0;
+volatile int suspiciousActivityDetection = 0;
 
 /* Activity Detection counters */
 static int userADCount = 0;
