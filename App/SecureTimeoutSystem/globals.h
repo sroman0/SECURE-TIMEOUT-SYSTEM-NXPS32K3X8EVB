@@ -7,9 +7,9 @@ typedef short int my_bool;
 #define false 0
 
 /* Global variables */
-extern int userActivity;
-extern int userActivityDetection;
-extern int suspiciousActivity;
-extern int suspiciousActivityDetection;
+extern volatile int userActivity;
+extern volatile int userActivityDetection;
+extern volatile int suspiciousActivity;
+extern volatile int suspiciousActivityDetection;
 
 #endif /* GLOBALS_H */
